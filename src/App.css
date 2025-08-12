@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.validation-parent {
+  color: red;
+  display: none;
+  font-size: 20px;
+  margin: 3px 0;
+}
+
+.parent-sign {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  gap: 10px;
+  padding: 20px;
+}
+.parent-sign2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  gap: 10px;
+  padding: 20px;
+  align-items: center;
+
+}
+
+.acount-features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.acount-features .link {
+  opacity: 0.5;
+  text-decoration: none;
+  color: black
+}
+
+.acount-features .link:hover {
+  color: red;
+  opacity: 1;
+  font-weight: bold;
+}
