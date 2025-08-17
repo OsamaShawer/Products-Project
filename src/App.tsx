@@ -3,10 +3,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SignComponent from './Sign';
 import Register from './Register';
 import RegisterCode from './RegisterCode';
+import HeaderComponent from './Header';
 function App() {
 
   return (
     <BrowserRouter>
+      <HeaderComponent />
       <Routes>
         <Route path="/" element={<SignComponent />}></Route>
         <Route path="/register" element={<Register />}></Route>
@@ -16,4 +18,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
