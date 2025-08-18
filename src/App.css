@@ -4,9 +4,43 @@
   margin: 0;
 }
 .container {
-  width: 1500px;
+  width: 1000px;
   margin: 0 auto
 }
+header {
+  background-color: #FFC900;
+}
+header .container img {
+  width: 100px;
+}
+
+ul li .link-react {
+  padding: 0 15px;
+  color: black;
+  font-size: 23px;
+}
+ul li .link-react:hover  {
+  color: red;
+  font-weight: bold;
+}
+.container nav ul {
+  text-align: right;
+}
+header .container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon {
+  font-size: 30px;
+  transform: translate(-40px, -40px);
+}
+nav ul {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 
 a {
   text-decoration: none;
@@ -19,7 +53,7 @@ ul li {
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 .validation-parent {
@@ -31,14 +65,27 @@ body {
 
 .parent-sign {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
+  width: 800px;
   gap: 10px;
-  padding: 20px;
+}
+.parent-sign-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+.image-side {
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .parent-sign2 {
   display: flex;
