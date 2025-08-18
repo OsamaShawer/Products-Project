@@ -8,7 +8,6 @@ import {
 import { useState, type ChangeEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Alban from "./assets/alban.png";
-
 function SignComponent() {
   const [emailVal, setEmailVal] = useState(false);
   const [isRegistered, setIsRegistered] = useState(false);
